@@ -1,0 +1,79 @@
+@import "./rose-pine.css";
+
+* {
+  background: @surface;
+  font-family: CommitMono Nerd Font Mono;
+  font-size: 16;
+  font-weight: bold;
+}
+
+#memory {
+  color: @foam;
+}
+
+#temperature {
+  color: @rose;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#clock {
+  color: @rose;
+  background: @module;
+}
+
+#workspaces button {
+  background: transparent;
+}
+
+#workspaces,
+#workspaces * {
+  background: @module;
+}
+
+#workspaces button.active {
+  color: @text;
+}
+
+button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  transition: none;
+  border-radius: 10px;
+}
+
+#window {
+  color: @foam;
+}
+
+#clock,
+#workspaces
+{
+  margin: 5px;
+  border: 0.5px solid @highlightMed; 
+  border-radius: 10px;
+}
